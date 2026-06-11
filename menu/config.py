@@ -1,8 +1,0 @@
-CHICKEN = 1
-HOT_FOOT = 2    
-DRY_FOOD = 3  
-NUDLE = 4   
-SOJU = 5  
-BEER = 6 
-COKE =7 
-SERVICE_OUT = 99
