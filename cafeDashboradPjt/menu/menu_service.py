@@ -19,11 +19,11 @@ class MenuService:
                 self.menu_create()
             elif menuNum == menu_config.MENU_VIEW:
                 self.menu_view()
-            elif menuNum == menu_config.MENU_MODIFY:
+            elif menuNum == menu_config.MENU_UPDATE:
                 self.menu_modify()
             elif menuNum == menu_config.MENU_DELETE:
                 self.menu_delete()
-            elif menuNum == menu_config.MENU_EXIT:
+            elif menuNum == menu_config.SERVICE_OUT:
                 flag = False
 
     def menu_create(self):
@@ -77,7 +77,7 @@ class MenuService:
     def menu_delete(self):
         confirm = input('메뉴를 정말 삭제하시겠습니까? [Y] or [N]')
 
-        if confirm == 'Y' or 'y':
+        if confirm == 'y':
             self.cafeMenus = self.load_menus()
             del self.cafeMenus[session.getSignInedMenuId()]
 

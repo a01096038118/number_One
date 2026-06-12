@@ -1,7 +1,6 @@
 from order import config as order_config
 import json
 import os
-from menu import menu_service
 from datetime import datetime
 
 
@@ -27,13 +26,14 @@ class OrderService:
 
     def order_menu(self):
 
-        selectedCustomerType = input('선택해주세요. [1.매장 회원 2.비회원]')
+        selectedCustomerType = input('선택해주세요. [1.등록 고객 2.미등록 고객]')
         
         if selectedCustomerType == 1:
-            inputCustomerId = input('고객 ID입력: ')
+            inputCId = input('고객 ID입력: ')
 
         elif selectedCustomerType == 2:
-            customerId = '비회원'   
+            checkCustomer = input('미등록 고객이십니다. 고객 등록을 하시겠습니까? [1.네 2.아니오]')
+
 
         # cafemenus = menu_service.MenuService.load_menus()
 
