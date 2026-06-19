@@ -12,7 +12,7 @@ header {
     letter-spacing: 0;
     text-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
     transform: translateX(-50%);
-    --fade-duration: 5.5s;
+    --fade-duration: 3.5s;
     --fade-delay: 0s;
     user-select: none;
 }

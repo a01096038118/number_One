@@ -50,4 +50,6 @@ body {
 
 .member_result {
     font-family: 'Orbitron', sans-serif;
+    top: 50%;
+    left: 50%;
 }
